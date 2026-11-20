@@ -1,0 +1,47 @@
+# Local case evidence is intentionally separate from the public kit.
+/knowledge/
+/cases/
+/work/
+/.runtime/
+/dist/
+node_modules/
+.venv/
+__pycache__/
+*.py[cod]
+*.log
+.env
+.env.*
+!.env.example
+# Captures, shipped game data, decoded assets and native binaries.
+*.rdc
+*.apk
+*.aab
+*.obb
+*.blk
+*.bundle
+*.unity3d
+*.assets
+*.resS
+*.resource
+*.so
+*.dll
+*.exe
+*.bin
+*.dat
+*.spv
+*.glb
+*.gltf
+*.fbx
+*.obj
+*.png
+*.jpg
+*.jpeg
+*.mp4
+*.zip
+*.7z
+.DS_Store
+Thumbs.db
+# Explicit README media; keep other generated captures local.
+/media/*
+!/media/character-debug.webp
+!/media/character-debug-1080p.mp4
