@@ -1,5 +1,7 @@
 # Game Rebuild Kit
 
+**English** | [简体中文](README.zh-CN.md) | [日本語](README.ja.md)
+
 **Vision: analyze any game in one click and reconstruct its full implementation.**
 
 - **Analyze:** trace the algorithms, data relationships and execution flow behind game behavior.
@@ -33,6 +35,8 @@ This is a package-based reconstruction with fitted parameters, not verified nati
 > Use game-analysis to investigate this game behavior. State the question, choose the smallest useful evidence path, and explain what is established and what could change the conclusion.
 
 For reuse, copy the entire `skills/game-analysis/` directory into a skill directory supported by your agent. Load the [field guide](skills/game-analysis/references/field-guide.md) when selecting tools, designing checks or reporting results.
+
+The skill and field guide are maintained in English.
 
 ## Scope and requirements
 
