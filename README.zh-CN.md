@@ -9,6 +9,8 @@
 
 当前版本提供一个 AI 代理技能和一个研究示例。面向任意游戏的一键自动化与完整还原仍是项目目标。
 
+[在线交互预览（无需登录）](https://remielle-motion-study.pages.dev/)
+
 [![同一角色的五个同步视图：最终合成、骨骼与动作、角色颜色、法线缓冲和 Bloom。](media/character-debug.webp)](media/character-debug-1080p.mp4)
 
 [观看 1080p 视频](media/character-debug-1080p.mp4)

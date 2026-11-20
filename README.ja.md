@@ -9,6 +9,8 @@
 
 このリリースに含まれるのは、エージェント用スキルと実例です。あらゆるゲームに対応するワンクリックでの自動化と完全な再構築は、引き続きプロジェクトの目標です。
 
+[インタラクティブプレビューを開く（ログイン不要）](https://remielle-motion-study.pages.dev/)
+
 [![最終合成、リグとモーション、キャラクターカラー、ノーマルバッファ、ブルームの5つの同期ビューで表示したキャラクター。](media/character-debug.webp)](media/character-debug-1080p.mp4)
 
 [1080p動画を見る](media/character-debug-1080p.mp4)

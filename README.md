@@ -9,6 +9,8 @@
 
 This release provides an agent skill and a worked example. Universal one-click automation and complete reconstruction remain project goals.
 
+[Open the interactive preview (no sign-in required)](https://remielle-motion-study.pages.dev/)
+
 [![A character shown in five synchronized views: final composite, rig and motion, character color, normal buffer, and bloom.](media/character-debug.webp)](media/character-debug-1080p.mp4)
 
 [Watch the 1080p video](media/character-debug-1080p.mp4)
