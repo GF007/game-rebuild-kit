@@ -1,6 +1,11 @@
-# game-analysis-kit
+# Game Rebuild Kit
 
-**Analyze game logic, animation, physics and rendering through traceable evidence.**
+**Vision: analyze any game in one click and reconstruct its full implementation.**
+
+- **Analyze:** trace the algorithms, data relationships and execution flow behind game behavior.
+- **Reconstruct:** reproduce game systems from recovered evidence, covering logic, animation, physics and rendering.
+
+This release provides an agent skill and a worked example. Universal one-click automation and complete reconstruction remain project goals.
 
 [![A character shown in five synchronized views: final composite, rig and motion, character color, normal buffer, and bloom.](media/character-debug.webp)](media/character-debug-1080p.mp4)
 
