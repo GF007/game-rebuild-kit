@@ -47,6 +47,8 @@ When evidence changes, identify the affected assumption or scope. For important 
 
 Start with inventories, indexes and targeted searches. Decode, disassemble or execute only where needed. Each step should address a specific unknown. Reuse evidence whose inputs and assumptions still match the task.
 
+For Android targets, prefer a compatible emulator. Install the app, finish updates and resource downloads, then enable and authorize ADB debugging.
+
 Prefer existing tools. Extract a shared script only for repeated work with stable inputs and outputs. Stop when the requested question has sufficient evidence. Build a reconstruction only when requested or necessary to answer that question.
 
 ## Working loop
