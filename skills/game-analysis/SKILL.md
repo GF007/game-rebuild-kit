@@ -13,6 +13,17 @@ Terms used throughout this skill:
 - **Reconstruction:** the new implementation being compared with the target.
 - **Contract:** the inputs, operations, outputs and execution conditions required to reproduce a behavior, as supported by target evidence.
 
+## Start
+
+When no specific question is given, use a brief technical survey as the first deliverable: identify the target build, engine and accessible resources, then report findings, blockers and feasible next investigations. Follow an explicit user goal when provided.
+
+Use supplied material and lightweight read-only checks first. If target identity or access remains unclear, ask one concise question for only the missing inputs:
+
+- The game name, or package ID if already known.
+- A local build/sample path, or the intended device's ADB endpoint or serial.
+
+Do not require users to supply package IDs, engine names or resource formats that can be discovered after access. Resolve target ambiguity before operating on a device. Confirm identity and version before deeper analysis. If access fails, report the failure and the smallest action needed to continue.
+
 ## 1. Define the scope of each claim
 
 Identify the object, version, operating conditions and result to explain. Establish identity and relationships through stable identifiers and references; names are search clues. Record conditions that could change the conclusion.
