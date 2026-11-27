@@ -13,17 +13,17 @@ This release provides an agent skill and worked examples. Universal one-click au
 
 | Case | Focus | Live demo |
 |---|---|---|
-| Azur Promilia | Live render-pipeline inspection | [Open HTML](https://promilia-character-study.pages.dev/) |
+| Azur Promilia | Live render-pipeline inspection | [Open HTML](https://promilia-character-study.pages.dev/?character=skin-1010101) |
 | Remielle / ZZZ | Animation, secondary motion, multi-pass rendering | [Open HTML](https://remielle-motion-study.pages.dev/) |
 
 <details open>
 <summary><strong>Azur Promilia — live pipeline inspection</strong></summary>
 
-[![Representative screenshot of the reconstructed pipeline inspector for Azur Promilia.](media/promilia-pipeline.webp)](https://promilia-character-study.pages.dev/)
+[![Close-up of the bunny outfit with the live render-pipeline inspector.](media/promilia-pipeline.webp)](https://promilia-character-study.pages.dev/?character=skin-1010101)
 
-https://github.com/user-attachments/assets/f0086d68-ed3c-4403-b0a0-27606510b114
+https://github.com/user-attachments/assets/f7a09f37-7677-445d-859e-5addb5d745da
 
-28 s · 4K · 25 fps · silent
+26.5 s · 4K · 25 fps · silent
 
 **Focus:** RenderDoc-style inspection: scrub stages, inspect buffers while moving the camera, and switch native/ZZZ post-processing.
 

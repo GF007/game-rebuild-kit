@@ -13,17 +13,17 @@
 
 | 案例 | 重点 | 在线演示 |
 |---|---|---|
-| Azur Promilia | 实时渲染管线检查 | [打开 HTML](https://promilia-character-study.pages.dev/) |
+| Azur Promilia | 实时渲染管线检查 | [打开 HTML](https://promilia-character-study.pages.dev/?character=skin-1010101) |
 | Remielle / ZZZ | 动画、次级运动、多 pass 渲染 | [打开 HTML](https://remielle-motion-study.pages.dev/) |
 
 <details open>
 <summary><strong>Azur Promilia — 实时管线检查</strong></summary>
 
-[![Azur Promilia 重建管线检查器的代表性截图。](media/promilia-pipeline.webp)](https://promilia-character-study.pages.dev/)
+[![兔装近景渲染与实时管线检查界面。](media/promilia-pipeline.webp)](https://promilia-character-study.pages.dev/?character=skin-1010101)
 
-https://github.com/user-attachments/assets/f0086d68-ed3c-4403-b0a0-27606510b114
+https://github.com/user-attachments/assets/f7a09f37-7677-445d-859e-5addb5d745da
 
-28 秒 · 4K · 25 fps · 无声
+26.5 秒 · 4K · 25 fps · 无声
 
 **重点：** 类似 RenderDoc 的检查方式：拖动阶段滑条，移动相机查看实时缓冲，切换原生／ZZZ 后处理。
 

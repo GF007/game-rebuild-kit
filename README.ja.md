@@ -13,17 +13,17 @@
 
 | ケース | 焦点 | オンラインデモ |
 |---|---|---|
-| Azur Promilia | リアルタイムのレンダーパイプライン検査 | [HTMLを開く](https://promilia-character-study.pages.dev/) |
+| Azur Promilia | リアルタイムのレンダーパイプライン検査 | [HTMLを開く](https://promilia-character-study.pages.dev/?character=skin-1010101) |
 | Remielle / ZZZ | アニメーション、二次モーション、多段パスレンダリング | [HTMLを開く](https://remielle-motion-study.pages.dev/) |
 
 <details open>
 <summary><strong>Azur Promilia — リアルタイムのパイプライン検査</strong></summary>
 
-[![Azur Promiliaの再構築パイプライン検査画面の代表スクリーンショット。](media/promilia-pipeline.webp)](https://promilia-character-study.pages.dev/)
+[![ウサギ衣装のクローズアップとリアルタイムのパイプライン検査画面。](media/promilia-pipeline.webp)](https://promilia-character-study.pages.dev/?character=skin-1010101)
 
-https://github.com/user-attachments/assets/f0086d68-ed3c-4403-b0a0-27606510b114
+https://github.com/user-attachments/assets/f7a09f37-7677-445d-859e-5addb5d745da
 
-28秒 · 4K · 25 fps · 音声なし
+26.5秒 · 4K · 25 fps · 音声なし
 
 **焦点：** RenderDocのようにステージをたどり、カメラを動かしながらバッファを確認。ネイティブ／ZZZのポストプロセスを切り替えられます。
 
