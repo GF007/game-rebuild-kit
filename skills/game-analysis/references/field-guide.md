@@ -67,6 +67,45 @@ With static evidence only, leave unsupported runtime questions open. A local pas
 
 Retain comparison inputs, candidate versions, masks and measurement methods. If these change, repeat matched comparisons before attributing improvement. Keep numerical error separate from pipeline correctness.
 
+## Diagnose the final image
+
+For visible defects, trace `source assets -> sampling -> post-processing -> composition -> screen display`. Inspect effective resources, state and intermediate outputs along the affected path before choosing a fix. An enabled anti-aliasing option does not establish final-image coverage.
+
+Use a matched camera, pose, lighting, temporal convergence and display scale; vary one suspected cause at a time. For edge defects, distinguish source geometry or texture detail, sampling and mip selection, temporal filtering, alpha coverage and blending, and actual output dimensions. Temporally filtered RGB can still acquire hard edges from a later binary alpha mask. Check color and coverage separately, including premultiplication at composition boundaries; a resolution change is a separate intervention from an asset upgrade.
+
+Measure the affected region and an unaffected control region where useful. Retain the last verified delivery, rerun the old reference path and representative new paths, and isolate browser checks from the user's active camera or controls. Record which conditions support the diagnosis; a fix under one condition does not explain every later complaint.
+
+## Verify assets and variant contracts
+
+When quality is requested, distinguish these claims and report missing evidence:
+
+| Quality claim | Evidence needed |
+|---|---|
+| Highest locally available | Inventory of the installed resources and compatible candidates actually compared; unavailable optional downloads remain unknown |
+| Native default | Target defaults and their conditions; these do not establish the current runtime choice |
+| Configured upper limit | Declared quality or LOD limits for the relevant build and configuration; these do not prove selection |
+| Observed runtime selection | Effective target resources, bindings and settings for the measured device and state |
+
+Inspect payloads rather than names or triangle counts alone. Compare topology, vertex attributes used by the shaders, skin weights and bone/bind-pose compatibility; verify material bindings and required passes. For textures, inspect native dimensions, format, channel semantics and the full mip chain, then check sampler and mip selection when runtime access exists. Enlarging an image does not recover missing source detail. Record which candidates were selected, rejected or remain unavailable and why.
+
+For character or outfit collections, keep a compact per-variant record of identity, resource dependencies, pose/skeleton assumptions, material/pass differences and readiness. Reuse the validated pipeline where contracts match. Check one representative of each new shader family or rendering path before batch expansion, then smoke-test every delivered variant for selection, loading and rendering. Estimate work by new dependencies and behavioral differences as well as count. A higher-quality mesh can require additional attributes or passes; a static pose check does not establish animation compatibility.
+
+## Inspect executed work
+
+Apply this when the requested deliverable includes an interactive renderer inspector. Generate the stage list and metadata from actual execution: order, inputs and outputs, resource identities, dimensions/formats and relevant draw, depth, blend or sampling state. Distinguish current outputs, retained history and cached or substituted inputs. A reconstruction trace establishes its own execution, not the target game's schedule.
+
+Capture stage outputs before reused buffers overwrite them. Label whether a stage control displays a recorded result or actually stops execution. Make depth/channel visualization and display conversions explicit; presentation views are not raw buffer values.
+
+Preserve rendering behavior while observing it: restore graphics state changed by inspection and avoid advancing or resetting temporal history merely to view a buffer. Disclose unavoidable redraws or resets and re-establish matched state before comparing the final result with inspection enabled and disabled: hold render/output dimensions fixed and let temporal history converge. Test layout-driven resizing separately. Record any instrumentation cost separately from rendering performance.
+
+## Deliver an inspectable viewer
+
+Use the relevant parts for HTML/viewer deliverables; an inspector, dark background or particular resolution is not a universal requirement.
+
+- **Resolution:** distinguish internal render targets, output/drawing-buffer dimensions and CSS display size, including device pixel ratio. Define whether presets control height, total dimensions or render scale. Report requested and actual dimensions and capability limits. Preserve the selected quality semantics when panels change layout, resize dependent targets and invalidate affected temporal history when dimensions change.
+- **Presentation:** keep backdrop, ground, grid and display shadows configurable and label their provenance. Separate viewer additions from recovered target materials, lighting and scene behavior; a display floor or fitted shadow does not establish original-scene equivalence.
+- **Portable delivery:** build from declared runtime dependencies, including optional variants and their material paths. Check reference closure, archive contents and integrity, then launch the delivered entry point using only package contents in an isolated location or server. Detect reliance on development paths, browser caches or undeclared network resources. Exercise the default and representative additional paths. Report package-integrity and runtime-startup results separately; neither substitutes for the other.
+
 ## Choose the delivery checkpoint
 
 For requested reconstructions, distinguish these outcomes:

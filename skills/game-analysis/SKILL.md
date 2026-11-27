@@ -66,3 +66,10 @@ Continue for unmet acceptance criteria when a useful check is feasible. If block
 `Question -> evidence map -> key unknown -> discriminating check -> revised conclusion -> acceptance`.
 
 Read the [field guide](references/field-guide.md) when selecting tools, designing checks or reporting results. Stay within the task's authorization. Keep samples and environment-specific details in local case records.
+
+For rendering follow-ups, read the applicable guidance:
+
+- Visible defects or incomplete anti-aliasing: [diagnose the final image](references/field-guide.md#diagnose-the-final-image).
+- Quality upgrades or additional characters and outfits: [verify assets and variant contracts](references/field-guide.md#verify-assets-and-variant-contracts).
+- Requested interactive pipeline debugging: [inspect executed work](references/field-guide.md#inspect-executed-work).
+- HTML/viewer resolution, presentation and delivery: [deliver an inspectable viewer](references/field-guide.md#deliver-an-inspectable-viewer).
