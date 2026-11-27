@@ -19,8 +19,6 @@
 <details open>
 <summary><strong>Azur Promilia — 实时管线检查</strong></summary>
 
-[![兔装近景渲染与实时管线检查界面。](media/promilia-pipeline.webp)](https://promilia-character-study.pages.dev/?character=skin-1010101)
-
 https://github.com/user-attachments/assets/f7a09f37-7677-445d-859e-5addb5d745da
 
 26.5 秒 · 4K · 25 fps · 无声

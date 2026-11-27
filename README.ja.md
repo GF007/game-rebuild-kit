@@ -19,8 +19,6 @@
 <details open>
 <summary><strong>Azur Promilia — リアルタイムのパイプライン検査</strong></summary>
 
-[![ウサギ衣装のクローズアップとリアルタイムのパイプライン検査画面。](media/promilia-pipeline.webp)](https://promilia-character-study.pages.dev/?character=skin-1010101)
-
 https://github.com/user-attachments/assets/f7a09f37-7677-445d-859e-5addb5d745da
 
 26.5秒 · 4K · 25 fps · 音声なし

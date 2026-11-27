@@ -19,8 +19,6 @@ This release provides an agent skill and worked examples. Universal one-click au
 <details open>
 <summary><strong>Azur Promilia — live pipeline inspection</strong></summary>
 
-[![Close-up of the bunny outfit with the live render-pipeline inspector.](media/promilia-pipeline.webp)](https://promilia-character-study.pages.dev/?character=skin-1010101)
-
 https://github.com/user-attachments/assets/f7a09f37-7677-445d-859e-5addb5d745da
 
 26.5 s · 4K · 25 fps · silent
