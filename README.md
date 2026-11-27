@@ -7,15 +7,44 @@
 - **Analyze:** trace the algorithms, data relationships and execution flow behind game behavior.
 - **Reconstruct:** reproduce game systems from recovered evidence, covering logic, animation, physics and rendering.
 
-This release provides an agent skill and a worked example. Universal one-click automation and complete reconstruction remain project goals.
+This release provides an agent skill and worked examples. Universal one-click automation and complete reconstruction remain project goals.
 
-[Open the interactive preview (no sign-in required)](https://remielle-motion-study.pages.dev/)
+## Cases
 
-[![A character shown in five synchronized views: final composite, rig and motion, character color, normal buffer, and bloom.](media/character-debug.webp)](media/character-debug-1080p.mp4)
+| Case | Focus | Live demo |
+|---|---|---|
+| Azur Promilia | Live render-pipeline inspection | [Open HTML](https://promilia-character-study.pages.dev/) |
+| Remielle / ZZZ | Animation, secondary motion, multi-pass rendering | [Open HTML](https://remielle-motion-study.pages.dev/) |
 
-[Watch the 1080p video](media/character-debug-1080p.mp4)
+<details open>
+<summary><strong>Azur Promilia — live pipeline inspection</strong></summary>
 
-16 seconds, 1920 x 1080, 30 fps, silent. The views share one animation state and camera. Buffer views use actual outputs from the reconstructed renderer; display transforms are labeled.
+[![Representative screenshot of the reconstructed pipeline inspector for Azur Promilia.](media/promilia-pipeline.webp)](https://promilia-character-study.pages.dev/)
+
+https://github.com/user-attachments/assets/f0086d68-ed3c-4403-b0a0-27606510b114
+
+28 s · 4K · 25 fps · silent
+
+**Focus:** RenderDoc-style inspection: scrub stages, inspect buffers while moving the camera, and switch native/ZZZ post-processing.
+
+**Scope:** A reconstructed renderer with 13 static character/outfit variants and live camera/buffer updates.
+
+</details>
+
+<details>
+<summary><strong>Remielle / ZZZ — animation, secondary motion and multi-pass rendering</strong></summary>
+
+[![A character shown in five synchronized views: final composite, rig and motion, character color, normal buffer, and bloom.](media/character-debug.webp)](https://remielle-motion-study.pages.dev/)
+
+https://github.com/user-attachments/assets/8cbf6070-7972-499e-b3ca-66c94ba9ff7f
+
+16 s · 1080p · 30 fps · [Download MP4](media/character-debug-1080p.mp4)
+
+**Focus:** Five synchronized views: final composite, rig/motion, character color (MRT0), stored normal RGB (MRT3), and bloom at 2x gain.
+
+**Scope:** Package-based reconstruction with fitted parameters; native-game equivalence not verified.
+
+</details>
 
 ## What you can get
 
@@ -32,18 +61,6 @@ Use the skill to guide an agent toward the deliverable you request. Depending on
 For a rendering task, this can mean opening a viewer, moving the camera, switching supported variants and inspecting intermediate buffers through to the final image. The inspector describes the reconstructed renderer's execution; cached inputs and display conversions are labeled. Static poses, animation support and recovered original-game behavior are reported separately.
 
 These are task-specific outputs the agent builds and validates, not a viewer runtime bundled with this repository. Select the outputs you need; a focused analysis does not require every feature. See the [rendering and viewer guidance](skills/game-analysis/references/field-guide.md#diagnose-the-final-image).
-
-## Case: character animation and rendering
-
-The example traces character resources into animation, secondary motion and rendering. The recording shows:
-
-- **Final composite:** character shading and post-processing.
-- **Rig / motion:** live rig transforms, animation time and a rotation trace.
-- **Character color:** the first character color attachment (MRT0).
-- **Normal buffer:** stored RGB values from the normal attachment (MRT3).
-- **Bloom:** the composed bloom buffer, displayed at 2x gain.
-
-This is a package-based reconstruction with fitted parameters, not verified native-game equivalence.
 
 ## Quick start
 

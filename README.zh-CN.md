@@ -7,15 +7,44 @@
 - **分析：** 追踪游戏行为背后的算法、数据关系与执行流程。
 - **还原：** 依据已获得的证据重建游戏系统，涵盖逻辑、动画、物理与渲染。
 
-当前版本提供一个 AI 代理技能和一个研究示例。面向任意游戏的一键自动化与完整还原仍是项目目标。
+当前版本提供 AI 代理技能和研究案例。面向任意游戏的一键自动化与完整还原仍是项目目标。
 
-[在线交互预览（无需登录）](https://remielle-motion-study.pages.dev/)
+## 案例
 
-[![同一角色的五个同步视图：最终合成、骨骼与动作、角色颜色、法线缓冲和 Bloom。](media/character-debug.webp)](media/character-debug-1080p.mp4)
+| 案例 | 重点 | 在线演示 |
+|---|---|---|
+| Azur Promilia | 实时渲染管线检查 | [打开 HTML](https://promilia-character-study.pages.dev/) |
+| Remielle / ZZZ | 动画、次级运动、多 pass 渲染 | [打开 HTML](https://remielle-motion-study.pages.dev/) |
 
-[观看 1080p 视频](media/character-debug-1080p.mp4)
+<details open>
+<summary><strong>Azur Promilia — 实时管线检查</strong></summary>
 
-16 秒，1920 × 1080，30 fps，无音轨。各视图共享同一动画状态和相机。缓冲视图来自重建渲染器的实际输出，显示时采用的转换已在画面中标注。
+[![Azur Promilia 重建管线检查器的代表性截图。](media/promilia-pipeline.webp)](https://promilia-character-study.pages.dev/)
+
+https://github.com/user-attachments/assets/f0086d68-ed3c-4403-b0a0-27606510b114
+
+28 秒 · 4K · 25 fps · 无声
+
+**重点：** 类似 RenderDoc 的检查方式：拖动阶段滑条，移动相机查看实时缓冲，切换原生／ZZZ 后处理。
+
+**范围：** 重建渲染器，包含 13 个静态角色／服装变体，支持实时相机与缓冲更新。
+
+</details>
+
+<details>
+<summary><strong>Remielle / ZZZ — 角色动画、次级运动与多 pass 渲染</strong></summary>
+
+[![同一角色的五个同步视图：最终合成、骨骼与动作、角色颜色、法线缓冲和 Bloom。](media/character-debug.webp)](https://remielle-motion-study.pages.dev/)
+
+https://github.com/user-attachments/assets/8cbf6070-7972-499e-b3ca-66c94ba9ff7f
+
+16 秒 · 1080p · 30 fps · [下载 MP4](media/character-debug-1080p.mp4)
+
+**重点：** 五个同步视图：最终合成、骨骼／动作、角色颜色（MRT0）、存储的法线 RGB（MRT3）和 2 倍增益的 Bloom。
+
+**范围：** 基于发行包的重建并使用拟合参数；尚未核验与原生游戏等价。
+
+</details>
 
 ## 最终能交付什么
 
@@ -32,18 +61,6 @@
 对于渲染任务，最终体验可以是：打开页面、移动相机、切换已支持的形态，沿管线阶段查看中间缓冲直到最终成像。检查器反映重建渲染器的实际执行，并标注缓存输入和显示转换；静态姿态、动画支持与已恢复的原游戏行为分别说明。
 
 这些是代理按任务构建并验证的产出，仓库本身不附带 viewer 运行程序。按需选择交付内容，单一分析问题无需实现全部功能。具体方法见[渲染与 viewer 指南](skills/game-analysis/references/field-guide.md#diagnose-the-final-image)。
-
-## 案例：角色动画与渲染
-
-此案例从角色资源追踪到动画、次级运动和渲染。视频展示：
-
-- **最终合成：** 角色着色与后处理。
-- **骨骼 / 动作：** 当前帧的骨骼层级变换、动画时间和旋转曲线。
-- **角色颜色：** 角色的第一个颜色附件（MRT0）。
-- **法线缓冲：** 法线附件（MRT3）中存储的 RGB 值。
-- **Bloom：** 合成后的 Bloom 缓冲，以 2 倍增益显示。
-
-这是基于发行包分析并使用拟合参数的重建，尚未验证与原游戏运行结果等价。
 
 ## 快速开始
 
